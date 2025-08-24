@@ -1,0 +1,70 @@
+
+# DICIONARIOS ( ou objetos )
+
+cachorro = {
+    'Nome': 'Doug',
+    'Raça': 'Golden Retriever',
+    'Gênero': 'Fêmea',
+    'Idade': 2,
+    'Saudável': True
+}
+
+# forma de acessar um dicionário
+print(cachorro['Nome'])
+# iterando pelo valor da chave
+print(cachorro['Nome'][2])
+
+# reatribuindo valores das chaves existentes
+cachorro['Nome'] = 'Doglas'
+print(cachorro['Nome'])
+
+# também cria chaves novas
+cachorro['Peso'] = 10
+print(cachorro)
+
+# removendo chaves junto com seu valor do dicionario
+del cachorro['Peso']
+print(cachorro)
+# só muda a sintaxe do del pro pop()
+# removendo elementos baseado na chave
+cachorro.pop('Saudável')
+print(cachorro)
+
+# fazendo uma copia do meu dicionario cachorro
+cachorro_copiado = cachorro.copy()
+
+print(cachorro_copiado)
+cachorro_copiado.clear()
+
+print(cachorro_copiado)
+print(cachorro)
+
+
+
+# ===================================================
+
+
+
+
+# SETS ( ou conjuntos )
+
+# conjuntos não possuem index em seus elementos 
+conjunto = set() # forma para criar um set vazio
+conjunto.add('kiwi')
+# print(conjunto) 
+
+# iterador do elemento manga
+conjunto.update('manga')
+# print(conjunto) 
+
+# sets não permitem duplicatas
+conjunto_fake = {'kiwi', 'kiwi', 'manga'}
+# print(conjunto_fake)
+
+# itens podem ser removidos dos sets
+conjunto_fake.remove('manga')
+# print(conjunto_fake)
+
+# o pop() remove o primeiro elemento do nosso set
+conjunto_fake.pop()
+# print(conjunto_fake)

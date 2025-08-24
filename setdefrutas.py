@@ -1,0 +1,8 @@
+frutas = set()
+frutas.add('Maça')
+frutas.add('Banana')
+#print(frutas)
+frutas_copia = frutas.copy()
+frutas_copia = frutas_copia.clear()
+print(frutas) 
+print(frutas_copia)
